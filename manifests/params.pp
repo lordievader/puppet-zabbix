@@ -89,7 +89,7 @@ class zabbix::params {
       $proxy_fping6location     = '/usr/sbin/fping6'
       $manage_repo              = false
       $manage_choco             = false
-      $zabbix_package_agent     = 'zabbix'
+      $zabbix_package_agent     = 'net-analyzer/zabbix'
       $agent_configfile_path    = '/etc/zabbix/zabbix_agentd.conf'
       $agent_config_owner       = 'zabbix'
       $agent_zabbix_user        = 'zabbix'
