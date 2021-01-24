@@ -138,8 +138,6 @@ class zabbix::params {
 
   if downcase($facts['kernel']) == 'windows' {
     $zabbix_version = '4.4.5'
-  } elsif $facts['os']['name'] == 'Debian' and Integer($facts['os']['release']['major']) == 10 {
-    $zabbix_version =  '4.0'
   } else {
     $zabbix_version = '3.4'
   }
